@@ -4,18 +4,16 @@ using namespace std;
 
 int main()
 {
-    Point p1, p2, p3;
 
-    p1.setName("P1");
-
-    p1.setXY(10, 20);
-
-    p2.setXY(10, 30);
+    Point p1("P1", 0, 0);
+    Point p2("P2", 30, 40);
 
     p1.show();
     p2.show();
-    p3.show();
-}// TIP See CLion help at <a
-// href="https://www.jetbrains.com/help/clion/">jetbrains.com/help/clion/</a>.
-//  Also, you can try interactive lessons for CLion by selecting
-//  'Help | Learn IDE Features' from the main menu.
+
+    cout << "Odleglosc pomiedzy punktami wynosi " << p1.distance(p2) << endl;
+    const Point& p = p1.distant(p2);
+    cout << "Punkt bardziej oddalonny od poczatku ukladu wspolrzednych to: " << endl;
+    p.show();
+
+}
