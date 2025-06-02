@@ -1,0 +1,32 @@
+# Pliki builda CLion i pliki tymczasowe
+cmake-build-*/
+cmake-build-*/
+
+# Pliki konfiguracyjne CLion
+.idea/
+
+# Pliki tymczasowe systemu
+*.swp
+*.swo
+
+# Pliki kompilacji
+*.o
+*.obj
+*.exe
+*.out
+*.a
+*.so
+*.dll
+*.dylib
+
+# Pliki generowane przez CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+CMakeLists.txt
+# Folder z wynikami kompilacji (może być różny, w zależności od ustawień)
+build/
+
+# Inne tymczasowe pliki
+*.log
